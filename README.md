@@ -1,2 +1,6 @@
 # flask-pyhton-car-movment
-school project for controlling a car with pyhton
+This was a school project for controlling a car with pyhton
+
+**web server**
+          app.py
+          **templates**
