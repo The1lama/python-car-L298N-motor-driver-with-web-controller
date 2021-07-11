@@ -159,3 +159,8 @@ def action(pin, action):
   return render_template('index.html')
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000, debug=True)
+
+"""
+for the webbsite to get the Circuit Diagram of the motors
+https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/
+"""
