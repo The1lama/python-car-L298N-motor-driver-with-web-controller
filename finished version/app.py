@@ -6,6 +6,7 @@ GPIO.setwarnings(False)
 app = Flask(__name__)
 GPIO.setmode(GPIO.BCM)
 #-----------------<setup>------------------
+#setting variables for GPIO pins 17, 27, 10
 led1 = 17
 led2 = 27
 led3 = 10
@@ -44,14 +45,15 @@ p2=GPIO.PWM(en2,150)
 p.start(25)
 p2.start(25)
 
-
+#when no input have be passed it will render the html file so the web site will have an "look"
 @app.route("/")
 def main():
   return render_template('index.html')
+
 #The function below is executed when someone requests a URL with the pin numbe$:
 @app.route("/<pin>/<action>")
 def action(pin, action):
-#------------------<pins>------------------
+#------------------<leds>--------------------
   if pin == "pin1" and action == "on":
     GPIO.output(led1, GPIO.HIGH)
 
@@ -95,6 +97,8 @@ def action(pin, action):
     GPIO.output(in3,GPIO.LOW)
     GPIO.output(in4,GPIO.HIGH)
 
+#------------------<speed>--------------------
+    
   if pin == "pin6" and action == "low":
       p.ChangeDutyCycle(25)
       p2.ChangeDutyCycle(25)
@@ -107,7 +111,9 @@ def action(pin, action):
     p.ChangeDutyCycle(75)
     p2.ChangeDutyCycle(75)
 
-  if pin == "pin7" and action == "sl":
+#------------------<stering>--------------------
+
+    if pin == "pin7" and action == "sl":
 #right motor forward:
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
@@ -115,8 +121,7 @@ def action(pin, action):
     GPIO.output(in1,GPIO.LOW)
     GPIO.output(in2,GPIO.HIGH)
 #input for stering right:
-###testa att byt plats på "sl" för att kuna svända vänster
-  
+
   if pin == "pin7" and action == "sr":
 #right motor backward:
     GPIO.output(in3,GPIO.LOW)
@@ -154,8 +159,9 @@ def action(pin, action):
     GPIO.output(in2,GPIO.LOW)
     GPIO.output(in3,GPIO.LOW)
     GPIO.output(in4,GPIO.LOW)
-
-
+    
   return render_template('index.html')
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000, debug=True)
+
+#you might have to swap the "+" pole and "-" pole or change a bit of the code, for the motors to work as it has been writen
