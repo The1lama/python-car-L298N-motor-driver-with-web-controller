@@ -179,39 +179,6 @@ while(1):
         GPIO.output(in4,GPIO.LOW)
         print("Done\nPlease input a next valid comand\n")
 
-
-
-        if(IO.input(14)==True): #object is far away
-        IO.output(2,True) #Red led ON
-        IO.output(3,False) # Green led OFF
-
-    if(IO.input(14)==False): #object is 
-        print("Turn")
-        IO.output(3,True) #Green led ON
-        IO.output(2,False) # Red led OFF
-        print("backward both")
-        GPIO.output(in1,GPIO.LOW)
-        GPIO.output(in2,GPIO.HIGH)
-        GPIO.output(in3,GPIO.LOW)
-        GPIO.output(in4,GPIO.HIGH)
-        time.sleep(0.5)
-        print("Stering right")
-    #right motor backward
-        GPIO.output(in3,GPIO.LOW)
-        GPIO.output(in4,GPIO.HIGH)
-    #left motor forward
-        GPIO.output(in1,GPIO.HIGH) 
-        GPIO.output(in2,GPIO.LOW)
-  #waits x amount of seconds
-        time.sleep(1)
-    #stops the motors
-        GPIO.output(in1,GPIO.LOW)
-        GPIO.output(in2,GPIO.LOW)
-        GPIO.output(in3,GPIO.LOW)
-        GPIO.output(in4,GPIO.LOW)
-        print("Done\nPlease input a next valid comand\n")
-
-
 #print if the inuput comand is not correct
     else:
         print("<<<  wrong data  >>>")
@@ -223,6 +190,4 @@ while(1):
 """
 for the webbsite to get the Circuit Diagram of the motors
 https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/
-
-
 """
