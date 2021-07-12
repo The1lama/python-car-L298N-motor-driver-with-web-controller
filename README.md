@@ -14,7 +14,8 @@ Some pakeges you will have to install for this code will work
 - 9 - 12 power supply
 - cabels
 - platform for car
-![diagram](https://user-images.githubusercontent.com/87243876/125212454-d4a90b80-e2ad-11eb-89b9-fbb96878f35d.png "Circuit Diagram for the motors")
+![diagram](https://user-images.githubusercontent.com/87243876/125340423-bf39ed00-e352-11eb-948f-4bf9b415d004.png)
+
 
 
 
