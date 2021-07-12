@@ -20,7 +20,6 @@ Some pakeges you will have to install for this code will work
 
 
 ### Links
-Circuit Diagram for the motors [link](https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/ "Circuit Diagram")
 
 
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
