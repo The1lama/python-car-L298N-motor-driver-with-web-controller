@@ -1,5 +1,5 @@
 # python car with flask
-This was a school project for controlling a car with pyhton using html/flask, and now I'm putting the code online.
+This was a school project for controlling a car with python using html/flask, and now I'm putting the code online, because of I didn't find a complete build with a raspberry pi with a l298n motor driver. 
 
 How I have devided up the project is in `web-site` where I have put in the raw html file if you wanted to look closer to the file how it is built up. In the `motor movment` I have the code for the motors, one has the controlls in the terminal, the other is combined with the html and flask to controll the car. Lastly in the `finished version` the whole project is combined to just CTRL + C , CTRL + V.
 
