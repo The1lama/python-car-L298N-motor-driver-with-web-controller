@@ -165,7 +165,3 @@ if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000, debug=True)
 
 #you might have to swap the "+" pole and "-" pole or change a bit of the code, for the motors to work as it has been writen
-"""
-for the webbsite to get the circuit diagram of the motors
-https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/
-"""
