@@ -7,20 +7,16 @@ Some pakeges you will have to install for this code will work
 - **Flask**
 - Have a **GPIO** installed
 
-## Parts needed to this program
+## Things needed to be able to build the car
 - Raspberry pi
 - L298N motor driver
 - 12V DC Motor (2)
 - 9 - 12 power supply
 - cabels
 - platform for car
-![diagram](https://user-images.githubusercontent.com/87243876/125340423-bf39ed00-e352-11eb-948f-4bf9b415d004.png)
+- **Flask** installed to raspberry
+- Have **GPIO** installed  
 
-
-
-
-### Links
-
-
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+### Circuit Diagram of the raspberry pi car
+![diagram](https://user-images.githubusercontent.com/87243876/125340423-bf39ed00-e352-11eb-948f-4bf9b415d004.png "Circuit Diagram")
 
