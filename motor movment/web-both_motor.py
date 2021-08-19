@@ -47,7 +47,7 @@ p2.start(25)
 
 @app.route("/")
 def main():
-  return render_template('index.html')
+  return render_template('main.html')
 #The function below is executed when someone requests a URL with the pin numbe$:
 @app.route("/<pin>/<action>")
 def action(pin, action):
@@ -156,7 +156,7 @@ def action(pin, action):
     GPIO.output(in4,GPIO.LOW)
 
 
-  return render_template('index.html')
+  return render_template('main.html')
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000, debug=True)
 
